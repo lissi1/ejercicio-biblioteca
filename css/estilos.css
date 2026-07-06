@@ -1,0 +1,129 @@
+
+
+:root {
+    --verde-oscuro: #223a2e;
+    --verde: #2f5233;
+    --dorado: #b08d57;
+    --papel: #faf6ef;
+    --texto: #2c2620;
+}
+
+body {
+    background-color: var(--papel);
+    color: var(--texto);
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, var(--verde-oscuro), var(--verde)) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.navbar-brand::before {
+    content: "\1F4DA";
+    margin-right: 8px;
+}
+
+.navbar .nav-link {
+    position: relative;
+    transition: color 0.15s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--dorado) !important;
+}
+
+/* Tarjetas */
+.card {
+    border: 1px solid rgba(47, 82, 51, 0.15);
+    border-radius: 10px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.card.shadow-sm:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(34, 58, 46, 0.18) !important;
+}
+
+.bg-primary,
+.card-header.bg-primary {
+    background-color: var(--verde) !important;
+}
+
+.btn-primary {
+    background-color: var(--verde);
+    border-color: var(--verde);
+}
+
+.btn-primary:hover {
+    background-color: var(--verde-oscuro);
+    border-color: var(--verde-oscuro);
+}
+
+.btn-outline-secondary {
+    color: var(--verde);
+    border-color: var(--verde);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--verde);
+    border-color: var(--verde);
+}
+
+/* Tablas */
+.table {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: var(--verde-oscuro);
+    color: #fff;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: rgba(176, 141, 87, 0.08);
+}
+
+/* Insignias de estado */
+.badge.bg-success {
+    background-color: var(--verde) !important;
+}
+
+.badge.bg-secondary {
+    background-color: #6b5b45 !important;
+}
+
+.badge.bg-warning {
+    background-color: var(--dorado) !important;
+    color: #2c2620 !important;
+}
+
+/* Formularios */
+.form-label {
+    font-weight: 600;
+    color: var(--verde-oscuro);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--dorado);
+    box-shadow: 0 0 0 0.2rem rgba(176, 141, 87, 0.25);
+}
+
+/* Alertas */
+.alert-info {
+    background-color: #eef4ee;
+    border-color: rgba(47, 82, 51, 0.3);
+    color: var(--verde-oscuro);
+}
