@@ -13,7 +13,7 @@ body {
     color: var(--texto);
 }
 
-/* Navbar */
+
 .navbar {
     background: linear-gradient(135deg, var(--verde-oscuro), var(--verde)) !important;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -38,7 +38,7 @@ body {
     color: var(--dorado) !important;
 }
 
-/* Tarjetas */
+
 .card {
     border: 1px solid rgba(47, 82, 51, 0.15);
     border-radius: 10px;
@@ -79,7 +79,7 @@ body {
     border-color: var(--verde);
 }
 
-/* Tablas */
+
 .table {
     background-color: #fff;
     border-radius: 8px;
@@ -95,7 +95,7 @@ body {
     background-color: rgba(176, 141, 87, 0.08);
 }
 
-/* Insignias de estado */
+
 .badge.bg-success {
     background-color: var(--verde) !important;
 }
@@ -109,7 +109,7 @@ body {
     color: #2c2620 !important;
 }
 
-/* Formularios */
+
 .form-label {
     font-weight: 600;
     color: var(--verde-oscuro);
@@ -121,7 +121,7 @@ body {
     box-shadow: 0 0 0 0.2rem rgba(176, 141, 87, 0.25);
 }
 
-/* Alertas */
+
 .alert-info {
     background-color: #eef4ee;
     border-color: rgba(47, 82, 51, 0.3);
