@@ -1,6 +1,4 @@
 <?php
-// Enrutador. Crea la conexion y los dos modelos una sola vez y los pasa
-// a la funcion del controlador que toque segun el parametro "accion".
 
 require_once 'config/Conexion.php';
 require_once 'models/Libro.php';
