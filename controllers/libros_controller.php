@@ -144,7 +144,7 @@ function accion_libros_confirmar_eliminar(Libro $libros, Prestamo $prestamos): v
 function accion_libros_eliminar(Libro $libros, Prestamo $prestamos): void {
     $id = (int)($_POST['id'] ?? -1);
 
-    // no se puede borrar un libro que alguien tiene prestado ahora mismo
+   
     if ($prestamos->tienePrestamoActivo($id)) {
         header('Location: index.php?accion=confirmar_eliminar&id=' . $id);
         exit;
